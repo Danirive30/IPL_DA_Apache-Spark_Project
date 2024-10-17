@@ -45,7 +45,8 @@ El objetivo principal de este proyecto es analizar datos históricos de partidos
 
 ## **Código Destacado**
 ### **Consulta SQL - Mejor Bateador por Temporada**
-```sql
+```
+sql
 SELECT 
     p.player_name,
     m.season_year,
@@ -58,5 +59,16 @@ GROUP BY p.player_name, m.season_year
 ORDER BY m.season_year, total_runs DESC;
 ```
 
+### **Gráfico - Promedio de Carreras en Powerplay**
+```
+top_economical_bowlers = economical_bowlers_pd.nsmallest(10, 'avg_runs_per_ball')
+plt.bar(top_economical_bowlers['player_name'], top_economical_bowlers['avg_runs_per_ball'], color='skyblue')
+plt.xlabel('Nombre del jugador')
+plt.ylabel('Promedio de carreras por bola')
+plt.title('Lanzadores más económicos en powerplay (Top 10)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+```
 
 # IPL_DA_Apache-Spark_Project
