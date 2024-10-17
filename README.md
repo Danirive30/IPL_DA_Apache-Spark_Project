@@ -70,4 +70,35 @@ plt.tight_layout()
 plt.show()
 ```
 
+## **Requisitos del Proyecto**
+- Python 3.x
+- Apache Spark
+- PySpark
+- Matplotlib
+- Seaborn
+
+## **Ejecución del Proyecto**
+1. **Cargar los datasets en Spark DataFrames utilizando PySpark.**
+2. **Crear vistas temporales con:**
+```python
+ball_by_ball_df.createOrReplaceTempView("ball_by_ball")
+match_df.createOrReplaceTempView("match")
+player_df.createOrReplaceTempView("player")
+player_match_df.createOrReplaceTempView("player_match")
+team_df.createOrReplaceTempView("team")
+```
+3. **Ejecutar las consultas SQL proporcionadas y generar visualizaciones con 'Matplotlib' y 'Seaborn'.**
+
+## **Contribución**
+¡Las contribuciones son bienvenidas! Por favor, crea un pull request para proponer cambios o mejoras.
+
+## **Licencia**
+Este proyecto se distribuye bajo la licencia MIT.
+
+## Autor
+
+Este proyecto fue elaborado por: José Daniel Rivera Hernández. (<Daniel.rivera.30@outlook.com>)
+
+---
+
 # IPL_DA_Apache-Spark_Project
