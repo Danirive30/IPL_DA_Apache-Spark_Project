@@ -15,11 +15,11 @@ El objetivo principal de este proyecto es analizar datos históricos de partidos
 
 ## **Estructura del Proyecto**
 ### 1. **Esquemas de Datos**
-- **Team.csv**: Información sobre los equipos.  
-- **Player.csv**: Detalles de los jugadores.  
-- **Player_match.csv**: Rendimiento individual de los jugadores en cada partido.  
-- **Match.csv**: Información de partidos con resultados y estadísticas relevantes.  
 - **Ball_by_ball.csv**: Datos a nivel de bola para cada partido.
+- **Match.csv**: Información de partidos con resultados y estadísticas relevantes.
+- **Player.csv**: Detalles de los jugadores.
+- **Player_match.csv**: Rendimiento individual de los jugadores en cada partido.
+- **Team.csv**: Información sobre los equipos.
 
 ### 2. **Análisis y Transformaciones Realizadas**
 #### **1. Preprocesamiento de Datos**
@@ -87,18 +87,15 @@ player_df.createOrReplaceTempView("player")
 player_match_df.createOrReplaceTempView("player_match")
 team_df.createOrReplaceTempView("team")
 ```
-3. **Ejecutar las consultas SQL proporcionadas y generar visualizaciones con 'Matplotlib' y 'Seaborn'.**
+3. **Ejecutar las consultas SQL proporcionadas y generar visualizaciones con **Matplotlib** y **Seaborn**.**
+
+## Fuente de Datos
+- **Data**: <https://data.world/raghu543/ipl-data-till-2017>
 
 ## **Contribución**
 ¡Las contribuciones son bienvenidas! Por favor, crea un pull request para proponer cambios o mejoras.
 
 ## **Licencia**
 Este proyecto se distribuye bajo la licencia MIT.
-
-## Autor
-
-Este proyecto fue elaborado por: José Daniel Rivera Hernández. (<Daniel.rivera.30@outlook.com>)
-
----
 
 # IPL_DA_Apache-Spark_Project
